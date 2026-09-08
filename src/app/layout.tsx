@@ -7,13 +7,13 @@ import { GlobalJsonLd } from '@/components/seo/GlobalJsonLd';
 import { SupportFabWrapper } from '@/components/support/SupportFabWrapper';
 import { AuthHydrator } from '@/providers/AuthHydrator';
 import { StoreProvider } from '@/providers/StoreProvider';
-import { PRODUCTION_SITE_URL } from '@/lib/seo/site-url';
+import { getSiteUrl } from '@/lib/seo/site-url';
 import './globals.css';
 
 const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? PRODUCTION_SITE_URL),
+  metadataBase: new URL(getSiteUrl()),
   applicationName: 'OnnRide',
   title: {
     default: 'Bike Rental Near Me | Self Drive Bike on Rent | OnnRide',
