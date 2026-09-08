@@ -9,6 +9,7 @@ export async function getPublicSettingsMap(): Promise<Record<string, string>> {
   try {
     const response = await fetch(`${API_URL}/settings/public`, {
       next: { revalidate: 900 },
+      signal: AbortSignal.timeout(12_000),
     }).catch(() => null);
     if (!response?.ok) return {};
     const payload = (await response.json()) as {

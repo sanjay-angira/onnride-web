@@ -18,7 +18,11 @@ import type {
 import { toRentalApiPayload } from '@/lib/rental-datetime';
 import { filterCategoriesByClass } from '@/lib/vehicle-categories';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3000/api/v1';
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL?.trim() || 'http://localhost:3000/api/v1';
+
+/** Render cold starts can hang fetch with no timeout and blow Vercel's 60s SSG budget. */
+const FETCH_TIMEOUT_MS = 12_000;
 
 export function extractApiErrorMessage(payload: unknown): string {
   if (typeof payload !== 'object' || payload === null) return 'Request failed';
@@ -50,7 +54,7 @@ interface FetchOptions extends Omit<RequestInit, 'body'> {
 }
 
 async function request<T>(path: string, options: FetchOptions = {}): Promise<T> {
-  const { token, body, headers, revalidate, ...rest } = options;
+  const { token, body, headers, revalidate, signal, ...rest } = options;
 
   const cacheMode =
     revalidate === false || token
@@ -64,6 +68,7 @@ async function request<T>(path: string, options: FetchOptions = {}): Promise<T> 
     response = await fetch(`${API_URL}${path}`, {
       ...rest,
       ...cacheMode,
+      signal: signal ?? AbortSignal.timeout(FETCH_TIMEOUT_MS),
       headers: {
         'Content-Type': 'application/json',
         ...(token ? { Authorization: `Bearer ${token}` } : {}),
