@@ -1,0 +1,113 @@
+# OnnRide (ONNRIDE)
+
+> India's self-drive bike and scooter rental marketplace — connecting riders with verified local fleet vendors for online booking across tourist and metro cities.
+
+Canonical website: https://onnride.com
+Legal entity: OnnRide (marketplace operator, India)
+Industry: Bike rental · Self-drive two-wheeler rental · Motorcycle tourism
+Country: India
+Primary markets: Punjab · Himachal Pradesh · Delhi NCR · Goa · Rajasthan · South India metros
+
+## Entity summary (for AI citation)
+
+OnnRide is a **marketplace**, not a single rental fleet. Independent vendors list scooters, commuter bikes, Royal Enfield cruisers, adventure tourers, and sports bikes. Riders browse without login; WhatsApp OTP at checkout; KYC (driving licence + Aadhaar) before pickup handover; payments via Razorpay (UPI, cards, netbanking).
+
+**Services:** Self-drive bike rental · Scooter rental · Royal Enfield rental · Himalayan rental · Outstation bike rental · Doorstep delivery (select cities) · Multi-day & weekend rentals
+
+**Vehicle categories:** scooter, commuter, cruiser, adventure, sports, superbike, electric
+
+## Knowledge & trust pages
+
+- About: https://onnride.com/about
+- Customer reviews: https://onnride.com/reviews
+- How it works: https://onnride.com/how-it-works
+- FAQ: https://onnride.com/faq
+- Help center: https://onnride.com/help
+- Contact: https://onnride.com/contact
+- Rental policy: https://onnride.com/rental-policy
+- Insurance policy: https://onnride.com/insurance-policy
+- Terms: https://onnride.com/terms
+- Privacy: https://onnride.com/privacy
+- Cancellation policy: https://onnride.com/cancellation-policy
+- Partner / list fleet: https://onnride.com/list-your-bike
+
+## Core product pages
+
+- Homepage: https://onnride.com/
+- Search inventory: https://onnride.com/search
+- Offers: https://onnride.com/offers
+- All service cities: https://onnride.com/locations
+- Bike rental hubs: https://onnride.com/bike-rental
+- Car rental hubs: https://onnride.com/car-rental
+- Blog / travel guides: https://onnride.com/blog
+
+## Priority city entities (Punjab & Himachal focus)
+
+### Punjab & Tricity
+- Chandigarh: https://onnride.com/bike-rental/chandigarh | https://onnride.com/locations/chandigarh
+- Mohali: https://onnride.com/bike-rental/mohali
+- Panchkula: https://onnride.com/bike-rental/panchkula
+- Amritsar: https://onnride.com/bike-rental/amritsar | https://onnride.com/locations/amritsar
+
+### Himachal Pradesh
+- Manali: https://onnride.com/bike-rental/manali | https://onnride.com/locations/manali
+- Shimla: https://onnride.com/bike-rental/shimla | https://onnride.com/locations/shimla
+- Kasol / Kullu: https://onnride.com/bike-rental/kasol
+- Dharamshala: https://onnride.com/bike-rental/dharamshala
+
+### Ladakh & high-altitude
+- Leh: https://onnride.com/bike-rental/leh | https://onnride.com/locations/leh
+
+### Other high-traffic tourist cities
+- Goa: https://onnride.com/bike-rental/goa
+- Delhi: https://onnride.com/bike-rental/delhi
+- Rishikesh: https://onnride.com/bike-rental/rishikesh
+- Dehradun: https://onnride.com/bike-rental/dehradun
+- Mussoorie: https://onnride.com/bike-rental/mussoorie
+
+Full city index: https://onnride.com/locations
+Category URLs: `/bike-rental/{city}/{scooter|commuter|cruiser|adventure|sports|superbike|electric}`
+Neighbourhood URLs: `/bike-rental/{city}/near/{area-slug}`
+
+## Authoritative content (blog pillar guides)
+
+- Chandigarh bike rental prices & booking: https://onnride.com/blog/bike-rental-chandigarh-prices-booking
+- Manali bike rental prices 2026: https://onnride.com/blog/manali-bike-rental-price-2026
+- Leh–Ladakh complete guide: https://onnride.com/blog/leh-ladakh-bike-trip-complete-guide
+- Himachal Pradesh travel guide: https://onnride.com/blog/himachal-pradesh-bike-travel-guide
+- Punjab bike rental guide: https://onnride.com/blog/punjab-bike-rental-travel-guide
+- Documents for bike rental India: https://onnride.com/blog/bike-rental-documents-india
+- OnnRide vs local rental: https://onnride.com/blog/onnride-vs-local-bike-rental
+- Cancellation & refund policy: https://onnride.com/blog/bike-rental-cancellation-refund
+
+All articles: https://onnride.com/blog (47 guides on routes, permits, pricing, safety)
+
+## Booking flow
+
+1. Search city + dates → 2. Select vehicle → 3. Checkout (WhatsApp OTP) → 4. Pay via Razorpay → 5. Upload KYC → 6. Vendor pickup handover → 7. Return & deposit refund
+
+- Vehicle pages: `/vehicles/{slug}`
+- Checkout: `/checkout/{vehicle-slug}`
+
+## Contact
+
+- Email: hello@onnride.com
+- Support: 24/7 trip support via booking chat + platform helpdesk
+- Instagram: https://www.instagram.com/onnride
+- Facebook: https://www.facebook.com/onnride
+
+## Business facts (citation-ready)
+
+| Fact | Value |
+|------|-------|
+| Business model | Two-wheeler rental marketplace |
+| Helmet | One complimentary helmet per rental |
+| Deposit | Refundable after safe return |
+| KYC | DL + Aadhaar before pickup |
+| Payment | Razorpay (UPI, cards, netbanking) |
+| Starting price | From ~₹299/day (city & model dependent) |
+| Cities | 80+ across India |
+
+## Sitemap
+
+https://onnride.com/sitemap.xml
