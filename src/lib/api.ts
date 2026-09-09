@@ -18,8 +18,8 @@ import type {
 import { toRentalApiPayload } from '@/lib/rental-datetime';
 import { filterCategoriesByClass } from '@/lib/vehicle-categories';
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL?.trim() || 'http://localhost:3000/api/v1';
+const PRODUCTION_API_URL = 'https://onnride-backend.onrender.com/api/v1';
+const API_URL = process.env.NEXT_PUBLIC_API_URL?.trim() || PRODUCTION_API_URL;
 
 /** Render cold starts can hang fetch with no timeout and blow Vercel's 60s SSG budget. */
 const FETCH_TIMEOUT_MS = 12_000;

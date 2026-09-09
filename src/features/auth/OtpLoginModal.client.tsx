@@ -3,7 +3,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { sendOtp, verifyOtp } from '@/lib/api';
+import { API_URL, sendOtp, verifyOtp } from '@/lib/api';
 import { useAppDispatch } from '@/store/hooks';
 import { setCredentials } from '@/store/authSlice';
 import { cn } from '@/lib/utils';
@@ -19,7 +19,6 @@ function formatPhoneDisplay(phone: string) {
   return `+91 ${phone.slice(0, 5)} ${phone.slice(5)}`;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3000/api/v1';
 const showDevOtpHint =
   API_URL.includes('localhost') || API_URL.includes('127.0.0.1');
 
